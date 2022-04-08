@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Triangle?</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden{
+            display:none
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -25,7 +30,7 @@
         </div>
         <button id="calc">Calculate</button>
         <button id="clear">Clear</button>
-        <p></p>
+        <p class="hidden"></p>
     </div>
 </div>
 <script>
@@ -50,13 +55,37 @@
         let sideA = +a.value;
         let sideB = +b.value;
         let sideC = +c.value;
+        ans.classList.remove("hidden");
 
+        if (!checkIsValid(sideA) || !checkIsValid(sideB) || !checkIsValid(sideC)){
+            ans.textContent = 'Invalid Inputs';
+            return;
+        }
         if(checkIsTri(sideA, sideB, sideC)){
             ans.textContext = 'Yes, this makes a valid triangle'
             return;
         }
         ans.textContext = 'Inputs do NOT create a valid triangle'
+    });
+
+    function checkIsValid(num){
+        if(isNaN(num)){
+            return false
+        }
+        if (num<=0){
+            return false
+        }
+        return true
+    };
+
+    clearButton.addEventListener('click', function(e){
+        a.value = "";
+        b.value = "";
+        c.value = "";
+        ans.textContent = "";
+        ans.classList.add("hidden");
     })
+
 </script>
 </body>
 </html>
