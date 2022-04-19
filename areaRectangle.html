@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Area Of A Rectangle</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden{
+            display:none
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h3>Find the area of a rectangle</h3>
+        <h3>A = wl</h3>
+        <div class="row">
+            <div>
+                <label for="w">W</label>
+                <input type="text" id="w" name="w" style="width: 100px;">
+            </div>
+            <div>
+                <label for="l">L</label>
+                <input type="text" id="l" name="l" style="width: 100px;">
+            </div>
+        </div>
+        <button id="calc">Calculate</button>
+        <button id="clear">Clear</button>
+        <p class="hidden"></p>
+    </div>
+</div>
+<script>
+    const sideW = document.getElementById('a');
+    const sideL = document.getElementById('b');
+    const ans = document.querySelector('p');
+    const calculateButton = document.getElementById('calc');
+    const clearButton = document.getElementById('clear');
+    function checkIsTri(num1, num2){
+        let sideWL = (num1 * num2);
+
+        if(sideWL) {
+            return true;
+        }
+        return false;
+    }
+
+    calculateButton.addEventListener('click', function(e){
+        let sideW = +a.value;
+        let sideL = +b.value;
+        ans.classList.remove("hidden");
+
+        if (!checkIsValid(sideW) || !checkIsValid(sideL)){
+            ans.textContent = 'Invalid Inputs';
+            return;
+        }
+        if(checkIsTri(sideW, sideL,)){
+            ans.textContext = 'Yes, this makes a valid triangle'
+            return;
+        }
+        ans.textContext = 'Inputs do NOT create a valid triangle'
+    });
+
+    function checkIsValid(num){
+        if(isNaN(num)){
+            return false
+        }
+        if (num<=0){
+            return false
+        }
+        return true
+    };
+
+    clearButton.addEventListener('click', function(e){
+        a.value = "";
+        b.value = "";
+        ans.textContent = "";
+        ans.classList.add("hidden");
+    })
+</script>
+</body>
+</html>
