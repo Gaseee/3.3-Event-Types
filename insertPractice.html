@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h3>What is this?</h3>
+        <h4>I don't want this</h4>
+    </div>
+</div>
+<script>
+    const content = document.querySelector('.content');
+    //Replace contents of an html tag using innerHTML
+    content.innerHTML = '<h1>I love Zelda</h1><h4>Other stuff</h4>';
+
+    //add a new element in addition to existing elements
+    const zelda = document.createElement('h1');
+    zelda.innerHTML = 'I love Zelda';
+    content.appendChild(zelda);
+
+</script>
+</body>
+</html>
