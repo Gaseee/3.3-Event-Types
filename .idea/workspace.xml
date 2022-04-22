@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e952664-712b-4511-ac54-da81952fa0b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/3.8 Your Turn 1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7e952664-712b-4511-ac54-da81952fa0b3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/3.8 Your Turn 1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="238">
+              <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -166,7 +163,7 @@
       <workItem from="1650380439631" duration="3268000" />
       <workItem from="1650466894781" duration="2963000" />
       <workItem from="1650553210172" duration="3317000" />
-      <workItem from="1650639743861" duration="2138000" />
+      <workItem from="1650639743861" duration="2543000" />
     </task>
     <task id="LOCAL-00001" summary="Completed 3.3">
       <created>1649086959568</created>
@@ -266,11 +263,18 @@
       <option name="project" value="LOCAL" />
       <updated>1650641418999</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Completed 3.8 your turn">
+      <created>1650641969526</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1650641969526</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20401000" />
+    <option name="totallyTimeSpent" value="20806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -331,7 +335,8 @@
     <MESSAGE value="Completed 3.4 Your Turn" />
     <MESSAGE value="Starting 3.7 your turn" />
     <MESSAGE value="Completed 3.7 your turn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed 3.7 your turn" />
+    <MESSAGE value="Completed 3.8 your turn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed 3.8 your turn" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -429,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/3.8 Your Turn 1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="238">
+          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
         </state>
       </provider>
     </entry>
