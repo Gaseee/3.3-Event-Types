@@ -6,7 +6,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
+    <div class="content">
+        <p>Avatar Chooser</p>
+        <div class="row">
+            <h3>Select your avatar!</h3>
+            <input type="image" name="cat" id ="1" src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49ed3252c0b2ffb49cf8b508892e452d
+            "width="100" height="100">
+            <input type="image" name="dog" id ="2" src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg
+            "width="100" height="100">
+            <input type="image" name="cow" id ="3" src="https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg
+            "width="100" height="100">
+            <input type="image" name="tiger" id ="4" src="https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg
+            "width="100" height="100">
+            <input type="image" name="chicken" id ="5" src="https://cdn.britannica.com/07/183407-050-C35648B5/Chicken.jpg
+            "width="100" height="100">
+            <input type="image" name="hedgehog" id ="6" src="https://www.thesprucepets.com/thmb/nuRZVBLSTh8yjg7Z6ATVnQZ2vLU=/1927x1445/smart/filters:no_upscale()/GettyImages-626916125-5b3a4a8046e0fb00379f682d.jpg
+            "width="100" height="100">
 
+        </div>
+        <button id="clear">Clear</button>
+    </div>
+</div>
+<script>
+    const content = document.querySelector('.content');
 
+    const cat = document.querySelector('1');
+    const dog = document.querySelector('2');
+    const cow = document.querySelector('3');
+    const tiger = document.querySelector('4');
+    const chicken = document.querySelector('5');
+    const hedgehog = document.querySelector('6');
+
+    const clearButton = document.querySelector('clear');
+
+    cat.addEventListener('click', function(e){
+        removeAvatar();
+        content.classList.add('cat');
+    });
+
+    dog.addEventListener('click', function(e){
+        removeAvatar();
+        content.classList.add('dog');
+    });
+
+    cow.addEventListener('click', function(e){
+        removeAvatar();
+        content.classList.add('cow');
+    });
+
+    tiger.addEventListener('click', function(e){
+        removeAvatar();
+        content.classList.add('tiger');
+    });
+
+    chicken.addEventListener('click', function(e){
+        removeAvatar();
+        content.classList.add('chicken');
+    });
+
+    hedgehog.addEventListener('click', function(e){
+        removeAvatar();
+        content.classList.add('hedgehog');
+    });
+
+    clearButton.addEventListener('click', function(e){
+        removeAvatar();
+    });
+
+    function removeAvatar(){
+        content.classList.remove('cat');
+        content.classList.remove('dog');
+        content.classList.remove('cow');
+        content.classList.remove('tiger');
+        content.classList.remove('chicken');
+        content.classList.remove('hedgehog');
+    }
+
+</script>
 </body>
 </html>
