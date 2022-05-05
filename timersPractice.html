@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timers Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <button id="disappear">Click Me!</button>
+        <p>I will disappear in three seconds.</p>
+
+        <button id="1">RED</button>
+        <button id="2">GREEN</button>
+        <button id="3">BLUE</button>
+        <button id="4">PINK</button>
+        <button id="5">TEAL</button>
+
+
+    </div>
+</div>
+
+<script>
+    const myButton = document.getElementById("disappear");
+    const red = document.getElementById('1');
+    const green = document.getElementById('2');
+    const blue = document.getElementById('3');
+    const pink = document.querySelector('4');
+    const teal = document.querySelector('5');
+
+
+    myButton.addEventListener('click', function(){
+
+        setTimeout(function(){
+            console.log("I was clicked 1 second ago,")
+        }, 1000);
+        console.log("Happens right away");
+    });
+
+</script>
+</body>
+</html>
