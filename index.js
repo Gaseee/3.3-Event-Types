@@ -37,5 +37,7 @@ function buildBoard(){
     }
 }
 
+function scoreBoard(){
+    //every click is one point
 
-
+}
